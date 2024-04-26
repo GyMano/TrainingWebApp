@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace TrainingWebApp.Core.Controllers
+namespace TrainWithUs.Core.Controllers
 {
     public class HomeController : Controller
     {

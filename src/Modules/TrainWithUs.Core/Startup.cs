@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using OrchardCore.Modules;
 
-namespace TrainingWebApp.Core
+namespace TrainWithUs.Core
 {
     public class Startup : StartupBase
     {
@@ -15,7 +15,7 @@ namespace TrainingWebApp.Core
         {
             routes.MapAreaControllerRoute(
                 name: "Home",
-                areaName: "TrainingWebApp.Core",
+                areaName: "TrainWithUs.Core",
                 pattern: "Home/Index",
                 defaults: new { controller = "Home", action = "Index" }
             );
