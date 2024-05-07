@@ -1,0 +1,20 @@
+﻿@model MessagePartViewModel
+@using TrainWithUs.Core.ViewModels
+
+@if (User?.Identity?.Name is not null)
+{
+    <fieldset class="form-group" asp-validation-class-for="FromUserId">
+        <label asp-for="FromUserId">@T["Sender name"] <span asp-validation-for="FromUserId"></span></label>
+        <input asp-for="FromUserId" type="text" value=@User.Identity.Name class="form-control" readonly />
+    </fieldset>
+}
+
+<fieldset class="form-group" asp-validation-class-for="ToUserId">
+    <label asp-for="ToUserId">@T["Addressee name"] <span asp-validation-for="ToUserId"></span></label>
+    <select asp-for="ToUserId" asp-items="Model.UserIds" class="form-control"></select>
+</fieldset>
+
+
+
+
+

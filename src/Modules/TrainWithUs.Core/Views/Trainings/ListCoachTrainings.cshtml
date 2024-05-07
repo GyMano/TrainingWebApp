@@ -1,0 +1,40 @@
+﻿@model IEnumerable<dynamic>
+@using Microsoft.AspNetCore.Mvc.Localization
+<header>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        ul {
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+
+        li {
+            padding: 20px 0;
+        }
+
+        header {
+            background-color: Black;
+            color: white;
+            
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>    
+    <h1>@T.Plural(Model.Count(), "The training you wrote", "The trainings you wrote")</h1>
+
+    <strong>@T.Plural(Model.Count(), $"You have {Model.Count()} training", $"You have {Model.Count()} trainings")</strong>
+</header>
+<body>
+    <ul>
+        @foreach (var shape in Model)
+        {
+            <li>
+                @await DisplayAsync(shape)
+            </li>
+        }
+</ul>
+</body>

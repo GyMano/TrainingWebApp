@@ -1,0 +1,21 @@
+﻿@model CoachProfilePartViewModel
+@using TrainWithUs.Core.ViewModels
+
+<fieldset class="form-group" asp-validation-class-for="Name">
+    <label asp-for="Name">@T["Name"] <span asp-validation-for="Name"></span></label>
+    <input asp-for="Name" class="form-control" />
+    <span class="hint">@T["Training Name"]</span>
+</fieldset>
+
+<fieldset class="form-group" asp-validation-class-for="BirthDate">
+    <label asp-for="BirthDate">@T["Birth Date"] <span asp-validation-for="BirthDate"></span></label>
+    <input asp-for="BirthDate" type="date" class="form-control" />
+</fieldset>
+
+@if (User?.Identity?.Name is not null)
+{
+    <fieldset class="form-group" asp-validation-class-for="CoachId">
+        <label asp-for="CoachId">@T["Coach Id"] <span asp-validation-for="CoachId"></span></label>
+        <input asp-for="CoachId" type="text" value=@User.Identity.Name class="form-control" readonly />
+    </fieldset>
+}

@@ -1,0 +1,26 @@
+﻿@model TrainingPartViewModel
+@using TrainWithUs.Core.ViewModels
+
+<fieldset class="form-group" asp-validation-class-for="Title">
+    <label asp-for="Title">@T["Title"] <span asp-validation-for="Title"></span></label>
+    <input asp-for="Title" class="form-control" />
+    <span class="hint">@T["Training title"]</span>
+</fieldset>
+
+<fieldset class="form-group" asp-validation-class-for="DateUtc">
+    <label asp-for="DateUtc">@T["Date of training"] <span asp-validation-for="DateUtc"></span></label>
+    <input asp-for="DateUtc" type="date" class="form-control" />
+</fieldset>
+
+<fieldset class="form-group" asp-validation-class-for="Sport">
+    <label asp-for="Sport">@T["Sport type"] <span asp-validation-for="Sport"></span></label>
+    <select asp-for="Sport" asp-items="Html.GetEnumSelectList<TrainWithUs.Core.Models.SportEnum>()" class="form-control"></select>
+</fieldset>
+
+@if (User?.Identity?.Name is not null)
+{
+    <fieldset class="form-group" asp-validation-class-for="AuthorCoachId">
+        <label asp-for="AuthorCoachId">@T["Author name"] <span asp-validation-for="AuthorCoachId"></span></label>
+        <input asp-for="AuthorCoachId" type="text" value=@User.Identity.Name class="form-control" readonly/>
+    </fieldset>
+}

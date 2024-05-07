@@ -1,0 +1,5 @@
+﻿@model CoachProfilePartViewModel
+@using TrainWithUs.Core.ViewModels
+
+<div><strong>@Model.Name</strong> - <span>(@Model.CoachId)</span></div>
+<div>@T["Birth Date: {0}", Model.BirthDate?.ToShortDateString() is null ? "" : Model.BirthDate?.ToShortDateString()]</div>

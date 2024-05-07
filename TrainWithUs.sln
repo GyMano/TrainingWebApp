@@ -5,23 +5,20 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7FBA24FF-EC90-452F-B029-F05604CB6DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainWithUs.Web", "src\TrainWithUs.Web\TrainWithUs.Web.csproj", "{0C0371BD-8561-474D-B204-B429438CED01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainWithUs.Web", "src\TrainWithUs.Web\TrainWithUs.Web.csproj", "{0C0371BD-8561-474D-B204-B429438CED01}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{908BFD25-1416-4B7A-84EA-01D7ED15D847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainWithUs.Core", "src\Modules\TrainWithUs.Core\TrainWithUs.Core.csproj", "{49549051-F7B8-41A9-B4F8-260ABC920E17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainWithUs.Core", "src\Modules\TrainWithUs.Core\TrainWithUs.Core.csproj", "{49549051-F7B8-41A9-B4F8-260ABC920E17}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Themes", "Themes", "{AE4F4619-837F-4CA2-A2D3-0B6B54EF8D6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainWithUs.Theme", "src\Themes\TrainWithUs.Theme\TrainWithUs.Theme.csproj", "{FA0D2984-31D4-461B-82D0-85C94D65D01A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainWithUs.Theme", "src\Themes\TrainWithUs.Theme\TrainWithUs.Theme.csproj", "{FA0D2984-31D4-461B-82D0-85C94D65D01A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0C0371BD-8561-474D-B204-B429438CED01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -37,11 +34,17 @@ Global
 		{FA0D2984-31D4-461B-82D0-85C94D65D01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA0D2984-31D4-461B-82D0-85C94D65D01A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0C0371BD-8561-474D-B204-B429438CED01} = {7FBA24FF-EC90-452F-B029-F05604CB6DAF}
 		{908BFD25-1416-4B7A-84EA-01D7ED15D847} = {7FBA24FF-EC90-452F-B029-F05604CB6DAF}
 		{49549051-F7B8-41A9-B4F8-260ABC920E17} = {908BFD25-1416-4B7A-84EA-01D7ED15D847}
 		{AE4F4619-837F-4CA2-A2D3-0B6B54EF8D6B} = {7FBA24FF-EC90-452F-B029-F05604CB6DAF}
 		{FA0D2984-31D4-461B-82D0-85C94D65D01A} = {AE4F4619-837F-4CA2-A2D3-0B6B54EF8D6B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F01D0CE-A24A-489C-B676-D6922F209263}
 	EndGlobalSection
 EndGlobal

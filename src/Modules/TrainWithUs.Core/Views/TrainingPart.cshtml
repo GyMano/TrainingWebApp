@@ -1,0 +1,5 @@
+﻿@model TrainingPartViewModel
+@using TrainWithUs.Core.ViewModels
+
+<div><strong>@Model.Title</strong> - <span>@Model.AuthorCoachId</span></div>
+<div><span>@T["Date: {0}", Model.DateUtc?.ToShortDateString() is null ? "" : Model.DateUtc?.ToShortDateString()]</span>@T[", "]<span>@T["Sport: {0}", Model.Sport]</span></div>

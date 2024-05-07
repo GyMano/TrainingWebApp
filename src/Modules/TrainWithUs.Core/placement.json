@@ -1,0 +1,24 @@
+{
+  "PersonPart_Edit": [
+    {
+      "place": "Content:1"
+    }
+  ],
+  "TextField": [
+    {
+      "diplayType": "Detail",
+      "contentPart": [ "TrainingPart", "CoachProfilePart", "MessagePart" ],
+      "place": "Content:2"
+    },
+    {
+      "diplayType": "Summary",
+      "contentPart": [ "TrainingPart", "CoachProfilePart", "MessagePart" ],
+      "place": "Content:2"
+    },
+    {
+      "displayType": "AdminSummary",
+      "contentPart": [ "TrainingPart", "CoachProfilePart", "MessagePart" ],
+      "place": ""
+    }
+  ]
+}

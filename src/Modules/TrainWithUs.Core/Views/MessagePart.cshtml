@@ -1,0 +1,5 @@
+﻿@model MessagePartViewModel
+@using TrainWithUs.Core.ViewModels
+
+<div><span>@Model.FromUserId</span> => <strong>@Model.ToUserId</strong></div>
+@T["Sending time: {0}", Model.SendingTimeUtc.ToShortDateString()]
